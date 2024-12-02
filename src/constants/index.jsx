@@ -16,6 +16,26 @@ const K = {
       name: "CONTACT US",
     },
   ],
+  OVERLAYTEXT: [
+    {
+      name: "Clean Code & Design",
+    },
+    {
+      name: "Browser Compatibility",
+    },
+    {
+      name: "Responsive Layout",
+    },
+    {
+      name: "Easy Customization",
+    },
+    {
+      name: "Powerful Documentation",
+    },
+    {
+      name: "& Much More ...",
+    },
+  ],
 };
 
 export default K;

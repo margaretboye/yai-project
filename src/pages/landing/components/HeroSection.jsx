@@ -1,7 +1,8 @@
 import React from "react";
-import HeroImage from "../../../assets/images/hero-image.jpg";
+import HeroImage from "../../../assets/images/hero-image1.jpg";
 import NavBar from "../../../components/NavBar";
 import { Link } from "react-router-dom";
+import Button from "../../../components/Button";
 
 const HeroSection = () => {
   return (
@@ -14,12 +15,16 @@ const HeroSection = () => {
         <NavBar />
       </div>
       <div className="flex flex-col absolute top-[50%] ">
-        <h1 className="text-[120px] font-bold leading-[120px] text-white">
-          We are Amira!
+        <h5 className="text-white border border-white rounded-full font-medium py-1 ">
+          BELIEVE IN QUALITY
+        </h5>
+        <h1 className="text-7xl font-bold leading-[120px] text-white">
+          Organic fertilizers <br />
+          for healthy <br />
+          crops
         </h1>
-        <Link className="text-white bg-[#4169E1] w-1/3 text-center">
-          LEARN MORE ABOUT US
-        </Link>
+
+        <Button label={"LEARN MORE ABOUT US"} />
       </div>
     </section>
   );
