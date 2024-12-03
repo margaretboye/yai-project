@@ -1,6 +1,12 @@
 /* Landing Page - Herosection */
 .hero-image {
-  background-image: url(./assets/images/hero-image.jpg);
-  background-position: contain;
+  background-image: url(./assets/images/hero-image1.jpg);
+  background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: inherit;
 }

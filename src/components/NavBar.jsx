@@ -1,12 +1,12 @@
 import React from "react";
-import Logo from "../assets/logo/logo.png";
+import Logo from "../assets/logo/agric-logo.svg";
 import K from "../constants";
 
 const NavBar = () => {
   return (
     <div>
       <header className="flex justify-between items-center px-4">
-        <img src={Logo} alt="logo" className="" />
+        <img src={Logo} alt="logo" className="max-w-full max-h-11" />
         <nav>
           <ul className="flex items-start gap-x-2">
             {K.NAVLINKS.map((item, index) => {
