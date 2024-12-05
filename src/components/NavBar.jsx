@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FiMenu } from "react-icons/fi";
+import { MdKeyboardArrowRight } from "react-icons/md";
 import { IoIosClose } from "react-icons/io";
 
 import Logo from "../assets/logo/agric-logo.svg";
@@ -15,7 +16,7 @@ const NavBar = () => {
         <nav>
           {/* MOBILE VIEW */}
           {/* HAMBURGER */}
-          <div className="text-white sm:hidden" onClick={()=>{setShowMobileNav(!showMobileNav)}}><FiMenu size={25}/></div>
+          <div className="text-white sm:hidden" onClick={()=>{setShowMobileNav(!showMobileNav)}}><FiMenu size={30}/></div>
           {/* DARK MODAL */}
             <div onClick={()=>{setShowMobileNav(false)}} className={`${showMobileNav ? "top-0 right-0" : "-right-[100%] -top-0"} py-5 px-8 h-full fixed w-full z-10 bg-black/85 duration-500 sm:hidden`}>
             <IoIosClose color="white" size={50} className=" top-8 right-8 absolute " onClick={()=>{setShowMobileNav(false)}}/>
@@ -23,7 +24,11 @@ const NavBar = () => {
             <div onClick={(e)=>e.stopPropagation()} className= {`${showMobileNav ? "top-24 right-8 delay-100":"-right-full  delay-0"} w-[80%]  flex flex-col   gap-2 p-10 rounded-xl z-100 bg-white absolute  duration-1000 transition-all top-24 right-8`}>
               {
                 K.NAVLINKS.map((link,index)=>(
-                  <Link key={index} to={"/"} className={`${index == 4 ? "border-none":""} border-b w-full text-center py-5 px-3 font-medium` }>{link.name}</Link>
+                  <div className=" flex items-center justify-center gap-4">
+                    {link.icon}
+                    <Link key={index} to={"/"} className={`${index == 4 ? "border-none":""} border-b w-full  py-5 px-3 font-medium` }>{link.name}</Link>
+                    {/* <MdKeyboardArrowRight color="gray"/> */}
+                  </div>
                 ))
               }
             </div>
