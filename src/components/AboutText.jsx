@@ -26,16 +26,18 @@ const AboutText = () => {
       </div>
 
       <div className="flex flex-row">
-        <AboutCard
-          heading={"Longer lasting produce"}
-          paragraph={
-            "There are many variations of pass ages of lorem ipsum available majority have suffered."
-          }
-          image={FenceSVG}
-          alt={"fence icon"}
-        />
+        <div className="pr-6">
+          <AboutCard
+            heading={"Longer lasting produce"}
+            paragraph={
+              "There are many variations of pass ages of lorem ipsum available majority have suffered."
+            }
+            image={FenceSVG}
+            alt={"fence icon"}
+          />
+        </div>
 
-        <div>
+        <div className="pl-6">
           <AboutCard
             heading={" Organic Fertilizers"}
             paragraph={
