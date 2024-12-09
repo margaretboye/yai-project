@@ -34,3 +34,7 @@ h6 {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.services-bg {
+  background-image: url(./assets/images/services-bg.png);
+}
