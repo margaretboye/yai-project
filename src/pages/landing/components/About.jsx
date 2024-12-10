@@ -6,7 +6,7 @@ import AboutStats from "../../../components/AboutStats";
 
 const About = () => {
   return (
-    <section className="px-8 flex flex-wrap flex-row pt-28 bg-[#F8F7F0]">
+    <section className="px-8 flex flex-wrap flex-row pt-28 ">
       {/* Image Section */}
       <div className="w-full md:w-1/2 flex justify-center relative ">
         <img
