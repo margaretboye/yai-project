@@ -4,6 +4,7 @@ import About from "./components/About";
 import Footer from "../../components/Footer";
 import FertlizerSec from "./components/FertlizerSec";
 import TypesOfFertilizer from "./components/TypesOfFertilizer";
+import Promotion from "./components/Promotion";
 
 const LandingPage = () => {
   return (
@@ -12,6 +13,7 @@ const LandingPage = () => {
       <About />
       {/* <FertlizerSec /> */}
       <TypesOfFertilizer />
+      <Promotion />
       <Footer />
     </div>
   );
