@@ -1,7 +1,8 @@
 import React from "react";
 import SectionHeading from "../../../components/SectionHeading";
-import FertilizerCards from "../../../components/FertilizerCards";
 import MaizeCob from "../../../assets/images/maize.webp";
+import K from "../../../constants";
+import FertilizerCards from "../../../components/FertilizerCards";
 
 const TypesOfFertilizer = () => {
   return (
@@ -15,25 +16,43 @@ const TypesOfFertilizer = () => {
         </div>
 
         <div className="flex items-center">
-          <div className=" px-3">
+          <div className="px-3">
             <div className="pr-12">
-              <FertilizerCards />
-              <div className="mt-12">
-                <FertilizerCards />
-              </div>
+              {K.FERTILIZERS.slice(0, 2).map((fertilizer, index) => (
+                <div key={index} className="mt-12">
+                  <FertilizerCards
+                    icon={fertilizer.icon}
+                    alt={fertilizer.alt}
+                    title={fertilizer.title}
+                    description={fertilizer.description}
+                  />
+                </div>
+              ))}
             </div>
           </div>
 
           <div className="px-3 ">
             <div className="text-center">
-              <img src={MaizeCob} alt="" className="max-w-full height-auto" />
+              <img
+                src={MaizeCob}
+                alt="Maize Cob"
+                className="max-w-full height-auto"
+              />
             </div>
           </div>
 
-          <div>
-            <FertilizerCards />
-            <div className="mt-12">
-              <FertilizerCards />
+          <div className="px-3">
+            <div className="pr-12">
+              {K.FERTILIZERS.slice(2, 4).map((fertilizer, index) => (
+                <div key={index} className="mt-12">
+                  <FertilizerCards
+                    icon={fertilizer.icon}
+                    alt={fertilizer.alt}
+                    title={fertilizer.title}
+                    description={fertilizer.description}
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </div>

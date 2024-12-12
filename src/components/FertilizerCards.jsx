@@ -1,17 +1,17 @@
 import React from "react";
 import LeafIcon from "../assets/svg/leaves.svg";
 
-const FertilizerCards = () => {
+const FertilizerCards = ({ icon, title, description }) => {
   return (
     <div className="flex">
       <div className="mr-7 p-4 grid place-content-center rounded-[50%] bg-[#eddd5e] w-[90px] h-[90px]">
-        <img src={LeafIcon} alt="" width={45} />
+        <span>{icon}</span>
       </div>
 
       <div>
-        <h2 className="mb-3 text-[26px]">Agriculture Products</h2>
+        <h2 className="mb-3 text-[26px]">{title}</h2>
         <div className="text-[#666666] text-base font-normal">
-          Nullam porta enim vel tellus commodo, eget laoreet odio ultrices.
+          {description}
         </div>
       </div>
     </div>
