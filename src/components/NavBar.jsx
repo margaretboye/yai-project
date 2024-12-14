@@ -34,7 +34,7 @@ const NavBar = () => {
           }}
           className={`${
             showMobileNav ? "top-0 right-0" : "-right-[100%] -top-0"
-          } py-5 px-8 h-full fixed w-full z-10 bg-black/85 duration-500 sm:hidden`}
+          } py-5 px-8 h-full fixed w-full z-10 bg-black/85  duration-500 sm:hidden`}
         >
           <IoIosClose
             color="white"
