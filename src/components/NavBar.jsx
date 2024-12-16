@@ -56,15 +56,16 @@ const NavBar = () => {
             {K.NAVLINKS.map((link, index) => (
               <div className=" flex items-center justify-center gap-4">
                 {link.icon}
-                <Link
+
+                <a
                   key={index}
-                  to={"/"}
+                  href={link.id}
                   className={`${
                     index == 4 ? "border-none" : ""
                   } border-b w-full  py-5 px-3 font-medium`}
                 >
                   {link.name}
-                </Link>
+                </a>
                 {/* <MdKeyboardArrowRight color="gray"/> */}
               </div>
             ))}
