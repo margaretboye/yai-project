@@ -6,8 +6,14 @@ import AboutStats from "../../../components/AboutStats";
 
 const About = () => {
   return (
-    <section className="px-8 flex flex-wrap flex-row pt-8 sm:pt-28 ">
-        <p className={"sm:hidden w-full text-center mb-6 text-4xl font-normal text-heading-color"}>About Us</p>
+    <section className="px-8 flex flex-wrap flex-row pt-8 sm:pt-28 " id="about">
+      <p
+        className={
+          "sm:hidden w-full text-center mb-6 text-4xl font-normal text-heading-color"
+        }
+      >
+        About Us
+      </p>
       {/* Image Section */}
       <div className="w-full md:w-1/2 flex justify-center relative ">
         <img

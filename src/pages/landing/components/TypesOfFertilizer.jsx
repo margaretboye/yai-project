@@ -6,7 +6,7 @@ import FertilizerCards from "../../../components/FertilizerCards";
 
 const TypesOfFertilizer = () => {
   return (
-    <section className="bg-[#F8F7F0] py-24">
+    <section className="bg-[#F8F7F0] py-24" id="services">
       <div className="px-7">
         <div className="flex flex-col items-center">
           <SectionHeading heading={"Grow Naturally"} />
@@ -17,7 +17,7 @@ const TypesOfFertilizer = () => {
 
         <div className="flex flex-col sm:flex sm:flex-row items-center justify-between ">
           <div className="flex items-center justify-center  flex-1 ">
-            <div >
+            <div>
               {K.FERTILIZERS.slice(0, 2).map((fertilizer, index) => (
                 <div key={index} className="mt-12 py-0 w-[100%] ">
                   <FertilizerCards
@@ -42,8 +42,7 @@ const TypesOfFertilizer = () => {
           </div>
 
           <div className=" flex items-center justify-center  flex-1 ">
-
-            <div >
+            <div>
               {K.FERTILIZERS.slice(2, 4).map((fertilizer, index) => (
                 <div key={index} className="mt-12 py-0 w-[100%] ">
                   <FertilizerCards

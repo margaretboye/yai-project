@@ -72,15 +72,15 @@ const NavBar = () => {
         </div>
         {/* AFTER MOBILE VIEW */}
         <ul className="hidden sm:flex sm:items-start sm:gap-x-2">
-          {K.NAVLINKS.map((item, index) => {
+          {K.NAVLINKS.map((link, index) => {
             return (
               <li key={index} className=" py-11 text-white">
                 <a
                   className="px-3 flex items-center gap-3 hover:text-[#eddd5e] text-sm navlinks"
-                  href=""
+                  href={link.id}
                 >
                   <GoDotFill className="text-[#eddd5e] " />
-                  {item.name}
+                  {link.name}
                 </a>
               </li>
             );

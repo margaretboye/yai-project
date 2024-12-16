@@ -15,7 +15,8 @@ const Footer = () => {
               </div>
               <div className="sm:pl-20 pt-8 sm:pt-0 self-end">
                 <h3 className="text-xl sm:text-3xl sm:leading-[42px]">
-                  Professional & modern, a theme designed to help <br className={"hidden sm:block"} />
+                  Professional & modern, a theme designed to help{" "}
+                  <br className={"hidden sm:block"} />
                   your business stand out from the rest.
                 </h3>
               </div>
@@ -36,17 +37,7 @@ const Footer = () => {
                 </p>
               </aside>
             </div>
-            <hr className={"w-[95%] mx-auto sm:hidden"}/>
-            <div className="sm:basis-1/5 sm:max-w-[20%] sm:px-3">
-              <div className="pt-11">
-                <h5 className={"text-xl"}>Useful Link</h5>
-                <ul>
-                  <li>Company</li>
-                  <li>About</li>
-                  <li>Contact</li>
-                </ul>
-              </div>
-            </div>
+            <hr className={"w-[95%] mx-auto sm:hidden"} />
 
             <div className="sm:basis-1/5 sm:max-w-[20%] sm:px-3">
               <div className="pt-8 sm:pt-11">
@@ -63,19 +54,19 @@ const Footer = () => {
               <div className="pt-8 pb-11 sm:pt-11">
                 <h5 className={"text-xl"}>Our address</h5>
                 <ul>
-                  <li>Old Westbury 256, New York</li>
-                  <li>11201, United States</li>
+                  <li>Anibreko, near Ghana </li>
+                  <li>Holy Healing Church - Drobonso</li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <hr className={" mx-auto w-[80%] mb-4"}/>
+      <hr className={" mx-auto w-[80%] mb-4"} />
       <div className={"mb-4"}>
-        <p className={"text-center"}>Terms and Conditions</p>
-        <p className={"text-center"}>Privacy Policy</p>
-        <p className={"text-center"}>Copyright &copy; 2024 Agrimo. All rights reserved</p>
+        <p className={"text-center"}>
+          Copyright &copy; 2024 Agrimo. All rights reserved
+        </p>
       </div>
     </footer>
   );

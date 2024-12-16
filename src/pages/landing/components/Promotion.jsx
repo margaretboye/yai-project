@@ -5,7 +5,7 @@ import "../../../App.css";
 const Promotion = () => {
   return (
     <section>
-      <div className="px-7 promo-overlay">
+      <div className="px-7 promo-overlay" id="promotion">
         <div className="promo-bg px-10 py-20">
           <div className="sm:flex sm:flex-row flex flex-col items-center justify-center ">
             <div className="p-6 bg-[#EDDD5E] rounded-[50%] mb-5 sm:mb-0 sm:mr-8">

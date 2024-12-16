@@ -1,14 +1,11 @@
 import React from "react";
-import HeroImage from "../../../assets/images/hero-image1.jpg";
 import NavBar from "../../../components/NavBar";
-import { Link } from "react-router-dom";
-import Button from "../../../components/Button";
 import { MdArrowOutward } from "react-icons/md";
 import "../../../App.css";
 
 const HeroSection = () => {
   return (
-    <section className="hero-image">
+    <section className="hero-image" id="home">
       <div className="px-8 hero-overlay">
         <NavBar />
 
@@ -18,16 +15,19 @@ const HeroSection = () => {
               BELIEVE IN QUALITY !
             </h5>
             <h1 className="text-3xl sm:text-7xl sm:font-bold sm:leading-[100px] text-white ">
-              <span className=" text-3xl sm:text-[40px]">Organic Fertilizers</span> <br />
-              For Healthy Crops
+              <span className=" text-3xl sm:text-[40px]">Margi Papabi</span>
+              <br />
+              Agro Products
             </h1>
             <p className="text-white/85 sm:text-white sm:border-t sm:border-white max-w-fit pt-5 mb-6 ">
               We all need a little space to grow. Give yourself the space you
               need to find your inner you.
             </p>
             <div className=" flex gap-3 w-36 sm:w-64 items-center justify-center py-3  bg-white rounded-[30px]">
-              <a className="text-neutral-900" href="">Contact Us </a>
-             <MdArrowOutward size={22} color="#171717"/>
+              <a className="text-neutral-900" href="">
+                Contact Us
+              </a>
+              <MdArrowOutward size={22} color="#171717" />
             </div>
           </div>
         </div>
