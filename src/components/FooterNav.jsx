@@ -34,7 +34,7 @@ const FooterNav = () => {
               <AiOutlinePhone size={20} />
             </div>
 
-            <p>+233 55 803 4430</p>
+            <p>+233 54 175 0015</p>
           </div>
           <div className={"flex items-center gap-3 "}>
             <div className="bg-white rounded-full p-3">

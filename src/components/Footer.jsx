@@ -20,10 +20,10 @@ const Footer = () => {
               </div>
 
               <div className="sm:col-span-2">
-                <h3 className="text-xl sm:text-3xl sm:leading-[42px]">
-                  Professional & modern, a theme designed to help{" "}
-                  <br className={"hidden sm:block"} />
-                  your business stand out from the rest.
+                <h3 className="text-lg sm:text-3xl leading-6 sm:leading-[42px] text-center sm:text-left">
+                  Margi Papabi Agro Products
+                  <br />
+                  <span className="block">Liquified Organic Products</span>
                 </h3>
               </div>
             </div>
@@ -37,9 +37,8 @@ const Footer = () => {
             <div className="sm:col-span-1">
               <aside className="pt-11 pb-10">
                 <p className="text-md sm:text-base leading-6">
-                  Mauris sed molestie sem. Sed vel vestibulum elit, non accumsan
-                  risus. In vitae sapien viverra est Duo ei ullum inani
-                  senserit.
+                  Providing sustainable, organic solutions to boost farm
+                  productivity and soil health.
                 </p>
               </aside>
             </div>
