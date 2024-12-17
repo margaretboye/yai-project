@@ -10,7 +10,7 @@ const AboutText = () => {
     <div className="pt-8 sm:pt-16 sm:pl-[50px] sm:pb-[60px]">
       <div className="mb-14 sm:mb-12">
         <div className="flex flex-row bg-white max-w-max rounded-full py-1 pl-4 pr-4 mb-5 sm:mb-2">
-          <img src={LeafSVG} alt="" className="w-[25px] " />
+          <img src={LeafSVG} alt="" className="w-[25px] " loading="lazy" />
           <h5 className="icon home-icon">Who We Are</h5>
         </div>
 

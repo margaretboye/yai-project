@@ -11,7 +11,12 @@ const Footer = () => {
           <div className="px-8 max-w-[1424px] mx-auto">
             <div className="grid sm:grid-cols-3 gap-8 items-center justify-center">
               <div>
-                <img src={Logo} alt="logo" className="max-h-14" />
+                <img
+                  src={Logo}
+                  alt="logo"
+                  className="max-h-14"
+                  loading="lazy"
+                />
               </div>
 
               <div className="sm:col-span-2">
@@ -39,6 +44,7 @@ const Footer = () => {
               </aside>
             </div>
 
+            {/* WORKING HOURS AND ADDRESS SECTION */}
             <div>
               <div className="pt-8 sm:pt-11 pb-11">
                 <h5 className="text-xl">Working Time</h5>

@@ -10,7 +10,7 @@ const TypesOfFertilizer = () => {
       <div className="px-7">
         <div className="flex flex-col items-center">
           <SectionHeading heading={"Grow Naturally"} />
-          <h2 className="text-3xl sm:text-[55px] sm:leading-10 text-center text-heading-color">
+          <h2 className="text-3xl sm:text-[55px]  text-center text-heading-color mt-2 sm:leading-[60px]">
             Choose what's perfect <br /> for your field
           </h2>
         </div>
@@ -37,6 +37,7 @@ const TypesOfFertilizer = () => {
                 src={MaizeCob}
                 alt="Maize Cob"
                 className="max-w-full height-auto"
+                loading="lazy"
               />
             </div>
           </div>

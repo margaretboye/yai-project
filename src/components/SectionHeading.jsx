@@ -6,7 +6,7 @@ const SectionHeading = ({ heading }) => {
   return (
     <div>
       <div className="flex flex-row bg-white max-w-max rounded-full py-1 pl-4 pr-4 mb-2">
-        <img src={LeafSVG} alt="" className="w-[25px] " />
+        <img src={LeafSVG} alt="" className="w-[25px] " loading="lazy" />
         <h5 className="icon home-icon">{heading}</h5>
       </div>
     </div>

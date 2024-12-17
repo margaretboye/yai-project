@@ -24,7 +24,7 @@ const HeroSection = () => {
               need to find your inner you.
             </p>
             <div className=" flex gap-3 w-36 sm:w-64 items-center justify-center py-3  bg-white rounded-[30px]">
-              <a className="text-neutral-900" href="">
+              <a className="text-neutral-900" href="#contact">
                 Contact Us
               </a>
               <MdArrowOutward size={22} color="#171717" />

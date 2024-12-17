@@ -15,6 +15,7 @@ const NavBar = () => {
         src={Logo}
         alt="logo"
         className=" w-28 h-28 sm:max-w-full sm:max-h-11"
+        loading="lazy"
       />
       <nav>
         {/* MOBILE VIEW */}

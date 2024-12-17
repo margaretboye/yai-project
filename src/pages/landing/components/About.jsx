@@ -20,6 +20,7 @@ const About = () => {
           src={AboutImage}
           alt="About us"
           className="max-w-full h-auto rounded-[30px] "
+          loading="lazy"
         />
         <AboutStats />
       </div>
