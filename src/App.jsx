@@ -6,7 +6,7 @@ function App() {
   const router = createBrowserRouter([
     {
       index: true,
-      element: <LandingPage />,
+      element: <LandingPage/>,
     },
   ]);
 

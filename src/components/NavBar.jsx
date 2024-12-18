@@ -21,7 +21,7 @@ const NavBar = () => {
         {/* MOBILE VIEW */}
         {/* HAMBURGER */}
         <div
-          className="text-white sm:hidden"
+          className="text-white  sm:hidden"
           onClick={() => {
             setShowMobileNav(!showMobileNav);
           }}
@@ -64,6 +64,7 @@ const NavBar = () => {
                   className={`${
                     index == 4 ? "border-none" : ""
                   } border-b w-full  py-5 px-3 font-medium`}
+                  onClick={()=>{setShowMobileNav(false)}}
                 >
                   {link.name}
                 </a>

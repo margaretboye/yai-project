@@ -7,7 +7,7 @@ import Promotion from "./components/Promotion";
 
 const LandingPage = () => {
   return (
-    <div className="bg-[#F8F7F0] ">
+    <div className="bg-[#F8F7F0] scroll-smooth">
       <main>
         <HeroSection />
         <About />

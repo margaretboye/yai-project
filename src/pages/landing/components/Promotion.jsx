@@ -1,8 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { PiPottedPlantLight } from "react-icons/pi";
 import "../../../App.css";
+import AOS from "aos"
+import "aos/dist/aos.css"
+
+
 
 const Promotion = () => {
+  useEffect(()=>{
+    AOS.init({
+      duration:1000,
+      easing:"ease-in-out",
+      once:false,
+      mirror:true
+    })
+  },[])
   return (
     <section>
       <div className="px-7 promo-overlay" id="promotion">
@@ -12,7 +24,7 @@ const Promotion = () => {
               <PiPottedPlantLight fill="#47513E" size={50} />
             </div>
             <div>
-              <h2 className=" text-center sm:text-left text-3xl sm:text-5xl text-white">
+              <h2 data-aos="fade-in" className=" text-center sm:text-left text-3xl sm:text-5xl text-white">
                 Our goal is to produce globally
                 <br /> accessible organic fertilizers
               </h2>

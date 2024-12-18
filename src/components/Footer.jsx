@@ -1,8 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Logo from "../assets/logo/logo1.svg";
 import FooterNav from "./FooterNav";
+import AOS from "aos"
+import "aos/dist/aos.css"
+
 
 const Footer = () => {
+  
+    useEffect(()=>{
+      AOS.init({
+        duration:1000,
+        easing:"ease-in-out",
+        once:false,
+        mirror:true
+      })
+    },[])
   return (
     <footer>
       <FooterNav />
@@ -20,10 +32,10 @@ const Footer = () => {
               </div>
 
               <div className="sm:col-span-2">
-                <h3 className="text-lg sm:text-3xl leading-6 sm:leading-[42px] text-center sm:text-left">
+                <h3 data-aos="fade-in" data-aos-delay="200" className="text-lg sm:text-3xl leading-6 sm:leading-[42px] text-center sm:text-left">
                   Margi Papabi Agro Products
                   <br />
-                  <span className="block">Liquified Organic Products</span>
+                  <span   className="block">Liquified Organic Products</span>
                 </h3>
               </div>
             </div>
@@ -36,7 +48,7 @@ const Footer = () => {
           <div className="grid sm:grid-cols-3 gap-8">
             <div className="sm:col-span-1">
               <aside className="pt-11 pb-10">
-                <p className="text-md sm:text-base leading-6">
+                <p data-aos="fade-in" data-aos-delay="200" className="-mt-8 sm:mt-0 text-md sm:text-base leading-6">
                   Providing sustainable, organic solutions to boost farm
                   productivity and soil health.
                 </p>
@@ -44,7 +56,7 @@ const Footer = () => {
             </div>
 
             {/* WORKING HOURS AND ADDRESS SECTION */}
-            <div>
+            <div data-aos="fade-in" data-aos-delay="300" className="-mt-14 sm:mt-0">
               <div className="pt-8 sm:pt-11 pb-11">
                 <h5 className="text-xl">Working Time</h5>
                 <ul>
@@ -55,7 +67,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div>
+            <div data-aos="fade-in" data-aos-delay="400" className="-mt-14 sm:mt-0">
               <div className="pt-8 sm:pt-11 pb-11">
                 <h5 className="text-xl">Our Address</h5>
                 <address>
@@ -68,7 +80,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <hr className="mx-auto w-[80%] mb-4" />
+      <hr className="mx-auto w-[80%] mb-4 -mt-10 sm:mt-0" />
       <div className="mb-4">
         <p className="text-center">
           Copyright &copy; 2024 Agrimo. All rights reserved
